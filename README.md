@@ -1,6 +1,3 @@
-# cheon_hw1_interactive_svg_icons
-This repo is for MMED-1055 class HW1 interactive svg icons. 
-
 # HW1 - Interactive SVG Icons
 
 This repo contains the submission for MMED-1055 HW#1 by Jin Cheon.  

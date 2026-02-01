@@ -1,5 +1,19 @@
-@media screen and (min-width: 1200px) {
-   #hidden-box {
-      display: block;
-   }
+
+#icon-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+#icon-container > div{
+  text-align: center;
+}
+
+/* SVG가 너무 커서 줄바꿈 나는 걸 막는 핵심 */
+#icon-container svg{
+  width: 500px;      /* 원하는 크기로 조절 */
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
