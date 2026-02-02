@@ -1,19 +1,27 @@
 
-#icon-container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  align-items: start;
-}
-
-#icon-container > div{
+body {
+  font-family: alphabet-soup-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333;
   text-align: center;
 }
 
-/* SVG가 너무 커서 줄바꿈 나는 걸 막는 핵심 */
-#icon-container svg{
-  width: 500px;      /* 원하는 크기로 조절 */
-  height: auto;
-  display: block;
-  margin: 0 auto;
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 30px;
+  margin-bottom: 15px;
+  text-align: left;
 }
+
+h1 {
+  letter-spacing: 10px;
+  padding: 30px 0 30px 0;
+  color: rgb(252, 107, 4);
+  text-shadow: #6e2501 3px 3px 0;
+}
+
