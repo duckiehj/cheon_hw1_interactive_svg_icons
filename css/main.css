@@ -1,9 +1,9 @@
 
 body {
-  font-family: alphabet-soup-pro, sans-serif;
+  font-family: "alphabet-soup-pro", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   color: #333;
   text-align: center;
 }
@@ -29,7 +29,106 @@ h2 {
   text-align: center;
 }
 
+
+#lemon svg .outline {
+  transition: filter 0.3s ease;
+}
+
+#lemon svg:hover .outline {
+  filter: drop-shadow(0 0 10px #fff7a3)
+          drop-shadow(0 0 20px #f6a80d);
+}
+
+
 #Layer_1:hover {
   transform: rotateX(360deg);
   transition: 2s;
+}
+
+
+#leaf {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#Layer_2:hover #leaf {
+    animation: wiggle 1s ease-in-out;
+}
+
+@keyframes wiggle {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(20deg);}
+    75% {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#coconut .coconut-inner {
+  transition: fill 0.5s ease;
+}
+
+#coconut:hover .coconut-inner {
+  fill: #d8a275; 
+}
+
+
+#thunder svg .bolt-fill {
+  transition: transform 0.35s ease;
+  transform: translateY(0);
+  transform-box: fill-box;     
+  transform-origin: center;
+}
+
+#thunder svg .bolt-fill-2 {
+  transition-delay: 0.08s;
+}
+
+
+#thunder:hover svg .bolt-fill-1 {
+  transform: translateY(-10px);
+}
+
+#thunder:hover svg .bolt-fill-2 {
+  transform: translateY(-18px);
+}
+
+#thunder svg .bolt-outline {
+  transform: none;
+}
+
+
+#squeezit-bottle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#squeezit-bottle .bottle-con{
+  position: relative;
+  width: 377px;          
+  height: 377px;         
+  
+}
+
+
+#squeezit-bottle .bottle{
+  position: absolute;
+  inset: 0;                 
+  width: 100%;
+  height: 100%;
+  transition: opacity .2s ease;
+}
+
+#squeezit-bottle .normal{ opacity: 1; }
+#squeezit-bottle .squeezed{ opacity: 0; }
+
+#squeezit-bottle:hover .normal{ opacity: 0; }
+#squeezit-bottle:hover .squeezed{ opacity: 1; }
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
 }
